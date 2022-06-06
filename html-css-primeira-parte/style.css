@@ -1,0 +1,172 @@
+/* setter defalt */
+:root{
+  font-size: 62.5%; /*1rem = 10px*/
+}
+
+body{
+  font-size: 1.6rem;
+}
+
+/* header  */
+header{
+  background-color: #bbbbbb;
+  padding: 2rem 0;
+}
+
+.caixa{
+  position: relative;
+  width: 94rem;
+  margin: 0 auto;
+}
+
+nav{
+  position: absolute;
+  top: 50%;
+  right: 10%;
+}
+
+nav li{
+  display:  inline;
+  margin: 0 0 0 1.5rem;
+}
+
+nav a{
+  color: #000000;
+  text-decoration: none;
+
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 2.2rem;
+
+}
+
+nav a:hover{
+  color: #C78C19;
+  text-decoration: underline;
+}
+
+/* main */
+.produtos{
+	width: 94rem;
+	margin: 0 auto;
+	padding: 5rem 0;
+  
+}
+
+.produtos li{
+  display: inline-block;
+  text-align: center;
+  width: 30%;
+  vertical-align: top;
+  margin: 0 1.5%;
+  padding: 3rem 2rem;
+  box-sizing: border-box;
+
+  border: 0.2rem solid #000000; 
+  border-radius: 1rem;
+}
+
+.produtos li:hover{
+  border-color: #C78C19;
+}
+
+.produtos li:hover h2 {
+  color: #C78C19;
+  font-size: 3.4rem;
+}
+
+.produtos li:active{
+  border-color: #088C19;
+}
+
+.produtos h2{
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.produto-descricao{
+  font-size: 1.8rem;
+}
+
+.produto-preco{
+  font-size: 2.2rem;
+  font-weight: bold;
+  margin-top: 1rem;
+}
+
+/* footer */
+footer{
+  text-align: center;
+  background: url("assets-produtos/bg.jpg") ;
+  padding: 4rem 0rem ;
+  
+}
+
+.copyright {
+  color: #FFFFFF;
+  font-size: 1.3rem;
+  margin-top:  2rem;
+}
+
+/* contatos */
+main{
+  width: 94rem;
+  margin: 0 auto;
+}
+
+form{
+  margin: 4rem 0;
+
+}
+
+form label, form legend{
+  display: block;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.input-padrao{
+  display: block;
+  margin-bottom: 2rem;
+  padding: 1rem 2.5rem ;
+  width: 50%;
+}
+
+.checkbox{
+  margin: 2rem 0;
+}
+
+.enviar{
+  width: 40%;
+  padding: 1.5rem 0;
+  background: orange;
+  color: white;
+  font-weight: bold;
+  font-size: 1.8rem;
+  border: none;
+  border-radius: 1rem;
+  transition: 1s all ;
+  cursor: pointer;
+}
+
+.enviar:hover{
+  background: darkorange;
+  transform: scale(1.2);
+}
+
+/* tabela */
+
+table{
+  margin: 2rem 0 4rem;
+}
+
+thead{
+  background: #555555;
+  color: white;
+  font-weight: bold;
+}
+
+td, th{
+  border: 0.1rem solid #000000;
+  padding: 0.8rem 1.5rem;
+}
