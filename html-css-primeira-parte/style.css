@@ -4,6 +4,7 @@
 }
 
 body{
+  font-family: 'Montserrat', sans-serif;
   font-size: 1.6rem;
 }
 
@@ -45,6 +46,108 @@ nav a:hover{
   text-decoration: underline;
 }
 
+/* css da página inicial */
+
+.banner{
+  width: 100%;
+}
+
+.titulo-principal{
+  text-align: center;
+  font-size: 2em;
+  padding-bottom: 1em;
+  clear: left;
+}
+
+.principal{
+  padding: 3rm 0;
+  background-color: #FEFEFE;
+  width: 94rem;
+  margin: 0 auto;
+}
+
+.principal p{
+  margin-bottom: 1em;
+}
+
+.principal strong{
+  font-weight: bold;
+}
+
+.principal em{
+  font-style: italic;
+}
+
+.utensilios{
+  width: 15rem ;
+  float: left;
+  margin-right: 2rem;
+  margin-bottom: 2rem;
+}
+.mapa{
+  padding: 3em 0;
+  background: linear-gradient(#FEFEFE,#888888) ;
+
+}
+
+.mapa-conteudo{
+  width: 94rem;
+  margin: 0 auto;
+}
+
+.mapa p {
+  margin-bottom: 2em;
+  text-align: center;
+}
+
+
+.beneficios{
+  padding: 3em 0;
+  background-color: #888888;
+
+}
+
+.conteudo-beneficios{
+  width: 64rem;
+  margin: 0 auto;
+
+  display: flex;
+  flex-direction: row;
+  
+}
+
+.lista-beneficios{
+  width: 40%;
+}
+
+.itens{
+  line-height: 1.5;
+  
+}
+
+.itens:before{
+  content: "🟊";
+}
+
+.itens:first-child{
+  font-weight: bold;
+}
+
+.imagem-beneficio{
+  width: 60%; 
+  opacity: 1;
+  transition: 400ms;
+}
+
+.imagem-beneficio:hover{
+  opacity: 0.3;
+}
+
+.video{
+  width: 56rem;
+  margin: 2em auto ;
+}
+
 /* main */
 .produtos{
 	width: 94rem;
@@ -64,6 +167,13 @@ nav a:hover{
 
   border: 0.2rem solid #000000; 
   border-radius: 1rem;
+}
+
+.produtos{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  gap: 2rem;
 }
 
 .produtos li:hover{
@@ -97,7 +207,7 @@ nav a:hover{
 /* footer */
 footer{
   text-align: center;
-  background: url("assets-produtos/bg.jpg") ;
+  background: url("assets/bg.jpg") ;
   padding: 4rem 0rem ;
   
 }
@@ -109,10 +219,6 @@ footer{
 }
 
 /* contatos */
-main{
-  width: 94rem;
-  margin: 0 auto;
-}
 
 form{
   margin: 4rem 0;
@@ -123,6 +229,20 @@ form label, form legend{
   display: block;
   font-size: 2rem;
   margin-bottom: 1rem;
+}
+
+.conteudo-form{
+  display: flex;
+  flex-direction: column;
+  margin-left: 20%;
+}
+
+.conteudo-table{
+  display: flex;
+  flex-direction: column; 
+  margin-left: 20%;
+
+  
 }
 
 .input-padrao{
@@ -151,22 +271,80 @@ form label, form legend{
 
 .enviar:hover{
   background: darkorange;
-  transform: scale(1.2);
+  transform: scale(1.1);
 }
 
 /* tabela */
 
 table{
   margin: 2rem 0 4rem;
+  width: 20%;
 }
 
 thead{
   background: #555555;
   color: white;
   font-weight: bold;
+  width: auto;
 }
 
 td, th{
   border: 0.1rem solid #000000;
   padding: 0.8rem 1.5rem;
+}
+
+
+@media screen and (max-width: 480px){
+  .caixa, .principal, .mapa-conteudo, .conteudo-beneficios, .video{
+    width: auto;
+  }
+
+  h1{
+    text-align: center;
+
+  }
+  nav{
+    position: static;
+    text-align: center;
+  }
+
+  #missao{
+    padding: 2rem;
+  }
+  
+  .lista-beneficios, .imagem-beneficios {
+      width: 100%;
+  }
+
+  .mapa-conteudo{
+    width: 95%;
+  }
+
+  .video{
+    width: 95%;
+  }
+
+  .conteudo-form{
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;    
+  }
+
+  .conteudo-table{
+    margin: 1rem;
+  }
+  
+   table{
+    margin: 0 auto;
+    width: 95%;
+  }
+ 
+  .produtos{
+    display: flex;
+    flex-direction: column;
+  }
+  .produtos li{
+    width: 95vw;
+  }
+
 }

@@ -8,12 +8,18 @@
 
   <link rel="stylesheet" href="reset.css">
   <link rel="stylesheet" href="style.css"> 
+
+  <!-- font Montserrat  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">  
+
 </head>
 
 <body>
   <header>
     <div class="caixa">
-      <h1><img src="assets-produtos/logo.png" alt="Logo da Barbearia Alura"></h1>
+      <h1><img src="assets/logo.png" alt="Logo da Barbearia Alura"></h1>
 
       <nav>
         <ul>
@@ -27,7 +33,7 @@
 
   <main>
 
-    <form >
+    <form class="conteudo-form">
       <label for="nomeSobrenome">Nome e sobrenome</label> 
       <input type="text" id="nomeSobrenome" class="input-padrao" placeholder="Nome completo" required>
 
@@ -63,34 +69,36 @@
       <input type="submit" value="Enviar formulário" class="enviar">
     </form>
 
-    <table>
-      <thead>
-        <tr>
-          <th>Dia</th>
-          <th>Horário</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>Segunda a Sexta</td>
-          <td>8h ~ 20h</td>
-        </tr>
+    <div  class="conteudo-table">
+      <table>
+        <thead>
+          <tr>
+            <th>Dia</th>
+            <th>Horário</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Segunda a Sexta</td>
+            <td>8h ~ 20h</td>
+          </tr>
 
-        <tr>
-          <td>Sabados e Domingo</td>
-          <td>8h ~ 14h</td>
-        </tr>
+          <tr>
+            <td>Sabados e Domingo</td>
+            <td>8h ~ 14h</td>
+          </tr>
 
-        <tr>
-          <td>feriados</td>
-          <td>12h ~ 18h </td>
-        </tr>
-      </tbody>
-    </table>
+          <tr>
+            <td>feriados</td>
+            <td>12h ~ 18h </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    
   </main>
-
   <footer>
-    <img src="assets-produtos/logo-branco.png" alt="Logo da Barbearia Alura">
+    <img src="assets/logo-branco.png" alt="Logo da Barbearia Alura">
     <p class="copyright">&copy; Copyright Barbearia Alura - 2022</p>
   </footer>
 
