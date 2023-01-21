@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem;
+    background-color: #cccccc;
+}
+
+.logo{
+    text-decoration: none;
+    font-size: 2rem;
+    color: white;
+    background-color: red;
+    padding: 1rem 2rem;
+}
+
+.list{
+    display: flex;
+    gap:1rem;
+    list-style: none;
+}
+
+.item a{
+    text-decoration: none;
+    color: black;
+}
